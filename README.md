@@ -5,7 +5,7 @@
 - [Module Installer](#module-installer)
 
 
-# How to build development version of Rakudo from source
+# How to build development version of Rakudo from source code
 
 These instructions explain how to build latest development version
 of the [Rakudo compiler](https://perl6.org/).
