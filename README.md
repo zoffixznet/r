@@ -1,3 +1,4 @@
+# Table of Contents
 
 - [Linux](#linux)
 - [Windows](#windows)
