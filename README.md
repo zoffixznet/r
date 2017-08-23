@@ -7,7 +7,7 @@ of the [Rakudo compiler](https://perl6.org/).
 ## Linux
 
 These instructions assume you're using some sort of Linux, like
-[Debian](https://www.debian.org/) and `bash` for shell.
+[Debian](https://www.debian.org/), and `bash` for shell.
 
 You'll need `git` and a C compiler, which on Debian you can get by running:
 
