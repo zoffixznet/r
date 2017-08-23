@@ -1,7 +1,7 @@
 
 # How to build Rakudo from Source
 
-The instructions explain how to build latest development version
+These instructions explain how to build latest development version
 of the [Rakudo compiler](https://perl6.org/).
 
 ## Linux
