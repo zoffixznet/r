@@ -1,8 +1,16 @@
 
+- [Linux](#linux)
+- [Windows](#windows)
+- [Module Installer](#module-installer)
+
+
 # How to build Rakudo from Source
 
 These instructions explain how to build latest development version
 of the [Rakudo compiler](https://perl6.org/).
+
+**IMPORTANT:** note that these instructions build latest development commits
+that undergo minimal amount of testing and may contain severe bugs.
 
 ## Linux
 
@@ -36,9 +44,12 @@ source ~/.bashrc
 You're now all set! To upgrade to latest development commit of Rakudo, simply
 type `update-perl6` in your shell and wait for the build process to complete. It takes a dozen minutes and needs about of 1.4GB of RAM (swap will work too).
 
-**IMPORTANT:** note that these instructions build latest development commits
-that undergo minimal amount of testing and may contain severe bugs.
+If you ever want to do a "from scratch" update, be sure to run the following,
+to delete some of the directories used by the module installer:
 
+```bash
+rm -fr ~/.zef ~/.perl6
+```
 
 ## Windows
 
@@ -78,4 +89,15 @@ C:
 cd \rakudo
 git pull
 perl Configure.pl --gen-moar --gen-nqp --backends=moar & gmake & gmake test & gmake install
+```
+
+## Module Manager
+
+After installing rakudo, to install the module manager, simply run the
+following in any directory. After installation, you can remove the `zef` directory that the commands create:
+
+```bash
+git clone https://github.com/ugexe/zef
+cd zef
+perl6 -I. bin/zef install .
 ```
