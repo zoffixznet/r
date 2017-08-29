@@ -3,6 +3,7 @@
 - [Linux](#linux)
 - [Windows](#windows)
 - [Module Installer](#module-installer)
+- [Inline::Perl5 with Latest Perl]()
 
 
 # How to build development version of Rakudo from source code
@@ -102,4 +103,20 @@ following in any directory. After installation, you can remove the `zef` directo
 git clone https://github.com/ugexe/zef
 cd zef
 perl6 -I. bin/zef install .
+```
+
+## Inline::Perl5 with Latest Perl
+
+To install [`Inline::Perl5`](http://modules.perl6.org/repo/Inline::Perl5) with
+latest Perl, you can use the following (instructions for Linux):
+
+```bash
+\curl -L https://install.perlbrew.pl | bash
+echo 'source ~/perl5/perlbrew/etc/bashrc' >> ~/.bashrc
+source ~/.bashrc
+perlbrew install perl-5.26.0 --notest -Duseshrplib -Dusemultiplicity
+perlbrew switch perl-5.26.0
+perlbrew install-cpanm
+
+zef install Inline::Perl5
 ```
