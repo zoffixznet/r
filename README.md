@@ -3,7 +3,7 @@
 - [Linux](#linux)
 - [Windows](#windows)
 - [Module Installer](#module-installer)
-- [Inline::Perl5 with Latest Perl]()
+- [Inline::Perl5 with Latest Perl](#inlineperl5-with-latest-perl)
 
 
 # How to build development version of Rakudo from source code
