@@ -78,7 +78,7 @@ perl Configure.pl --gen-moar --gen-nqp --backends=moar & gmake & gmake test & gm
 ```
 
 Add paths to the executables by [editing `PATH` environmental
-variable](https://www.google.com/search?q=windows+edit+environmental+variables&ie=utf-8&oe=utf-8). To its current value, add the following:
+variable](https://www.google.com/search?q=windows+edit+environmental+variables&ie=utf-8&oe=utf-8). To its current value, add the following (alter the paths if you installed to somewhere other than `C:\rakudo\`):
 
 ```
 ;C:\rakudo\install\bin;C:\rakudo\install\share\perl6\site\bin
