@@ -41,6 +41,9 @@ echo 'alias update-perl6='\''
     make test;
     make install'\''' >> ~/.bashrc
 source ~/.bashrc
+
+# Now just run the following to install rakudo or to upgrade it to latest dev commit in the future
+update-perl6
 ```
 
 You're now all set! To upgrade to latest development commit of Rakudo, simply
