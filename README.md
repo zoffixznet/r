@@ -32,7 +32,7 @@ development commit.
 
 ```bash
 git clone https://github.com/rakudo/rakudo/ ~/rakudo
-echo 'export PATH="$HOME/rakudo/install/bin:$HOME/install/share/perl6/site/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/rakudo/install/bin:$HOME/rakudo/install/share/perl6/site/bin:$PATH"' >> ~/.bashrc
 echo 'alias update-perl6='\''
     cd ~/rakudo;
     git pull;
