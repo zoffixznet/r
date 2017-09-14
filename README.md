@@ -2,7 +2,7 @@
 
 - [Linux](#linux)
 - [Windows](#windows)
-- [Module Installer](#module-installer)
+- [Module Manager](#module-manager)
 - [Inline::Perl5 with Latest Perl](#inlineperl5-with-latest-perl)
 
 
