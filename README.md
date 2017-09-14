@@ -99,14 +99,18 @@ perl Configure.pl --gen-moar --gen-nqp --backends=moar & gmake & gmake test & gm
 
 ## Module Manager
 
-After installing rakudo, to install the module manager, simply run the
-following in any directory. After installation, you can remove the `zef` directory that the commands create:
+After installing rakudo, install the module manager. Simply run the
+following in any temporary directory (instructions create one for you).
 
 ```bash
-git clone https://github.com/ugexe/zef
-cd zef
+cd $(mktemp -d)                        &&
+git clone https://github.com/ugexe/zef &&
+cd zef                                 &&
 perl6 -I. bin/zef install .
 ```
+
+You do *not* need to re-install `zef` after upgrading to newer versions of rakudo.
+To *update* `zef`, simply run `zef upgrade zef`
 
 ## Inline::Perl5 with Latest Perl
 
