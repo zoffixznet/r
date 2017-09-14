@@ -31,7 +31,7 @@ sudo apt-get update
 sudo apt-get -y install build-essential git
 ```
 
-Next, we'll close the source code repository to `~/rakudo`, then add a couple
+Next, we'll clone the source code repository to `~/rakudo`, then add a couple
 of paths to `PATH` as well as create a bash alias to update to latest
 development commit.
 
