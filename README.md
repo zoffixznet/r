@@ -103,12 +103,12 @@ perl Configure.pl --gen-moar --gen-nqp --backends=moar & gmake & gmake test & gm
 ## Module Manager
 
 After installing rakudo, install the module manager. Simply run the
-following in any temporary directory (instructions create one for you).
+following in any temporary directory (after installation, directory
+can be deleted):
 
 ```bash
-cd $(mktemp -d)                        &&
-git clone https://github.com/ugexe/zef &&
-cd zef                                 &&
+git clone https://github.com/ugexe/zef
+cd zef
 perl6 -I. bin/zef install .
 ```
 
