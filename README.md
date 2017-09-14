@@ -53,8 +53,8 @@ run `update-perl6` in your shell and wait for the build process to complete.
 It takes a dozen minutes and needs about of 1.4GB of RAM (swap will work too).
 You may want to [install module manager](#module-manager) next.
 
-If you ever want to do a "from scratch" update, be sure to run the following,
-to delete some of the directories used by the module installer:
+If you ever want to do a "from scratch" update by deleting `~/rakudo` checkout,
+be sure to also delete some of the directories used by the module installer:
 
 ```bash
 rm -fr ~/.zef ~/.perl6
