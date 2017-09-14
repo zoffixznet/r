@@ -38,7 +38,6 @@ echo 'alias update-perl6='\''
     git pull;
     perl Configure.pl --gen-moar --gen-nqp --backends=moar;
     make;
-    make test;
     make install'\''' >> ~/.bashrc
 source ~/.bashrc
 
@@ -77,7 +76,7 @@ Then build rakudo (`gmake` might be called something else, like `nmake` if
 you installed a different C compiler):
 
 ```cmd
-perl Configure.pl --gen-moar --gen-nqp --backends=moar & gmake & gmake test & gmake install
+perl Configure.pl --gen-moar --gen-nqp --backends=moar & gmake & gmake install
 ```
 
 Add paths to the executables by [editing `PATH` environmental
