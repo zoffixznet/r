@@ -110,7 +110,7 @@ perl6 -I. bin/zef install .
 ```
 
 You do *not* need to re-install `zef` after upgrading to newer versions of rakudo.
-To *update* `zef`, simply run `zef upgrade zef`
+To *upgrade* `zef`, simply run `zef upgrade zef`
 
 ## Inline::Perl5 with Latest Perl
 
