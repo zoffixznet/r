@@ -8,8 +8,13 @@
 
 # How to build development version of Rakudo from source code
 
-These instructions explain how to build latest development version
-of the [Rakudo compiler](https://perl6.org/).
+These instructions explain how to build latest *development* version
+of the [Rakudo compiler](https://perl6.org/). For latest *release*
+CentOS, Debian, Fedora, and Ubuntu rakudo packages, see
+[https://github.com/nxadm/rakudo-pkg/releases](https://github.com/nxadm/rakudo-pkg/releases).
+For latest release of Rakudo Star distribution, see
+[https://rakudo.perl6.org/downloads/star/](https://rakudo.perl6.org/downloads/star/).
+If you don't know what you want, you want Rakudo Star.
 
 **IMPORTANT:** note that these instructions build latest development commits
 that undergo minimal amount of testing and may contain severe bugs.
