@@ -34,11 +34,9 @@ development commit.
 git clone https://github.com/rakudo/rakudo/ ~/rakudo
 echo 'export PATH="$HOME/rakudo/install/bin:$HOME/rakudo/install/share/perl6/site/bin:$PATH"' >> ~/.bashrc
 echo 'alias update-perl6='\''
-    cd ~/rakudo;
-    git pull;
-    perl Configure.pl --gen-moar --gen-nqp --backends=moar;
-    make;
-    make install'\''' >> ~/.bashrc
+    cd ~/rakudo && git pull &&
+    perl Configure.pl --gen-moar --gen-nqp --backends=moar &&
+    make && make install'\''' >> ~/.bashrc
 source ~/.bashrc
 
 # Now just run the following to install rakudo or to upgrade it to latest dev commit in the future
