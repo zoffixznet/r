@@ -124,8 +124,8 @@ latest Perl, you can use the following (instructions for Linux):
 \curl -L https://install.perlbrew.pl | bash
 echo 'source ~/perl5/perlbrew/etc/bashrc' >> ~/.bashrc
 source ~/.bashrc
-perlbrew install perl-5.26.0 --notest -Duseshrplib -Dusemultiplicity
-perlbrew switch perl-5.26.0
+perlbrew install perl-5.26.1 --notest -Duseshrplib -Dusemultiplicity
+perlbrew switch perl-5.26.1
 perlbrew install-cpanm
 
 zef install Inline::Perl5
