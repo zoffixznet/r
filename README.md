@@ -6,18 +6,22 @@
 - [Inline::Perl5 with Latest Perl](#inlineperl5-with-latest-perl)
 
 
-# How to build development version of Rakudo from source code
+# How to build latest version of Rakudo from source code
 
-These instructions explain how to build latest *development* version
-of the [Rakudo compiler](https://perl6.org/). For latest *release*
-CentOS, Debian, Fedora, and Ubuntu rakudo packages, see
+These instructions explain how to build latest version
+of the [Rakudo compiler](https://perl6.org/) from source. You can also
+get latest
+CentOS, Debian, Fedora, and Ubuntu rakudo packages here:
 [https://github.com/nxadm/rakudo-pkg/releases](https://github.com/nxadm/rakudo-pkg/releases).
 For latest release of Rakudo Star distribution, see
 [https://rakudo.perl6.org/downloads/star/](https://rakudo.perl6.org/downloads/star/).
 If you don't know what you want, you want Rakudo Star.
 
-**IMPORTANT:** note that these instructions build latest development commits
-that undergo minimal amount of testing and may contain severe bugs.
+## Development Version
+
+These instructions build latest released version of the compiler. To build
+latest development commit, remove the entire line with `git describe` command
+in it from instructions (the command checks out latest tag, while by d
 
 ## Linux
 
@@ -40,6 +44,7 @@ git clone https://github.com/rakudo/rakudo/ ~/rakudo
 echo 'export PATH="$HOME/rakudo/install/bin:$HOME/rakudo/install/share/perl6/site/bin:$PATH"' >> ~/.bashrc
 echo 'alias update-perl6='\''
     cd ~/rakudo && git pull &&
+    git checkout $(git describe --abbrev=0 --tags) &&
     perl Configure.pl --gen-moar --gen-nqp --backends=moar &&
     make && make install'\''' >> ~/.bashrc
 source ~/.bashrc
@@ -74,6 +79,7 @@ C:
 mkdir \rakudo
 cd \rakudo
 git clone https://github.com/rakudo/rakudo/ .
+for /f usebackq %F in (`git describe "--abbrev=0" --tags`) do git checkout %F
 ```
 
 Then build rakudo (`gmake` might be called something else, like `nmake` if
@@ -97,6 +103,7 @@ check out, pull latest changes, and run the build command again:
 C:
 cd \rakudo
 git pull
+for /f usebackq %F in (`git describe "--abbrev=0" --tags`) do git checkout %F
 perl Configure.pl --gen-moar --gen-nqp --backends=moar & gmake & gmake test & gmake install
 ```
 
