@@ -21,7 +21,8 @@ If you don't know what you want, you want Rakudo Star.
 
 These instructions build latest released version of the compiler. To build
 **latest development commit**, remove the entire line with `git describe` command
-in it from instructions (the command checks out latest tag, while by d
+in it from instructions (the command checks out latest tag, while by default
+latest dev commit from `master` branch will be used)
 
 ## Linux
 
