@@ -44,7 +44,7 @@ development commit.
 git clone https://github.com/rakudo/rakudo/ ~/rakudo
 echo 'export PATH="$HOME/rakudo/install/bin:$HOME/rakudo/install/share/perl6/site/bin:$PATH"' >> ~/.bashrc
 echo 'alias update-perl6='\''
-    cd ~/rakudo && git pull &&
+    cd ~/rakudo && git checkout master && git pull &&
     git checkout $(git describe --abbrev=0 --tags) &&
     perl Configure.pl --gen-moar --gen-nqp --backends=moar &&
     make && make install'\''' >> ~/.bashrc
@@ -103,6 +103,7 @@ check out, pull latest changes, and run the build command again:
 ```cmd
 C:
 cd \rakudo
+git checkout master
 git pull
 for /f usebackq %F in (`git describe "--abbrev=0" --tags`) do git checkout %F
 perl Configure.pl --gen-moar --gen-nqp --backends=moar & gmake & gmake test & gmake install
