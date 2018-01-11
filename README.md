@@ -11,7 +11,7 @@
 These instructions explain how to build latest version
 of the [Rakudo compiler](https://perl6.org/) from source. You can also
 get latest
-CentOS, Debian, Fedora, and Ubuntu rakudo packages here:
+Alpine, CentOS, Debian, Fedora, and Ubuntu rakudo packages here:
 [https://github.com/nxadm/rakudo-pkg/releases](https://github.com/nxadm/rakudo-pkg/releases).
 For latest release of Rakudo Star distribution, see
 [https://rakudo.perl6.org/downloads/star/](https://rakudo.perl6.org/downloads/star/).
