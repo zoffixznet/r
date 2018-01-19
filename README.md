@@ -6,9 +6,9 @@
 - [Inline::Perl5 with Latest Perl](#inlineperl5-with-latest-perl)
 
 
-# How to build latest version of Rakudo from source code
+# How to build latest release of Rakudo from source code
 
-These instructions explain how to build latest version
+These instructions explain how to build latest release
 of the [Rakudo compiler](https://perl6.org/) from source. You can also
 get latest
 Alpine, CentOS, Debian, Fedora, and Ubuntu rakudo packages here:
