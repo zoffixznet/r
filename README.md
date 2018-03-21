@@ -97,7 +97,7 @@ variable](https://www.google.com/search?q=windows+edit+environmental+variables&i
 ;C:\rakudo\install\bin;C:\rakudo\install\share\perl6\site\bin
 ```
 
-To update to latest development commit, simply navigate to the repository
+To update to latest release, simply navigate to the repository
 check out, pull latest changes, and run the build command again:
 
 ```cmd
