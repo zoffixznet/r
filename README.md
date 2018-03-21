@@ -38,7 +38,7 @@ sudo apt-get -y install build-essential git
 
 Next, we'll clone the source code repository to `~/rakudo`, then add a couple
 of paths to `PATH` as well as create a bash alias to update to latest
-development commit.
+stable release.
 
 ```bash
 git clone https://github.com/rakudo/rakudo/ ~/rakudo
@@ -54,7 +54,7 @@ source ~/.bashrc
 update-perl6
 ```
 
-You're now all set! To upgrade to latest development commit of Rakudo, simply
+You're now all set! To upgrade to latest stable release of Rakudo, simply
 run `update-perl6` in your shell and wait for the build process to complete.
 It takes a dozen minutes and needs about of 1.4GB of RAM (swap will work too).
 You may want to [install module manager](#module-manager) next.
